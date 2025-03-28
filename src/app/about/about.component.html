@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-sm" style="background-color: rgba(0, 0, 0, 0.9);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item aa">
+            <a class="nav-link" routerLink='/home' style="color: #18d26e;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/about' style="color: #18d26e;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/resume" style="color: #18d26e;">Resume</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" style="color: #18d26e;">Contact</a>
+          </li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<!------------------------------------------------- section1 ----------------------------------------------------->
+<div [ngClass]="two" class="col-md-12"><br>
+    <div class="container col-md-11">
+        <h5 [ngStyle]="x">{{a}}</h5><hr>
+        <h3>{{aone}}</h3><br><br>
+        <div class="row">
+            <div class="fadeIn col-md-4 col-sm-10">
+                <img [src]="ai">
+            </div>
+            <div class="reveal th col-md-8 col-sm-10">
+              <h1><span id="spin"></span></h1>
+              <br>
+              <div class="row  reveal" [ngClass]="thh">
+                <mat-grid-list cols="4" rowHeight="60px">
+                    @for (tile of tiles; track tile) {
+                      <mat-grid-tile
+                        [colspan]="tile.cols"
+                        [rowspan]="tile.rows">
+                        <span class="material-symbols-outlined">
+                            arrow_right
+                        </span>
+                        {{tile.text}}</mat-grid-tile>
+                    }
+                  </mat-grid-list>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class=" col">
+    <p><br>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+    </div>
+</div> 
+<!---------------------------------------------------- section2 ----------------------------------------------------->
+<div class="sk"><br>
+    <h4 [ngStyle]="asks">{{ask}}</h4><hr><br>
+    <div class="row">
+        <div class="col bg-6">
+            <p>HTML</p><div class="progress">
+                <div class="progress-bar reveal" role="progressbar" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                100%
+                </div></div><br>
+            <p>CSS</p><div class="progress">
+                <div class="progress-bar reveal" role="progressbar" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                100%
+                </div></div><br>
+            <p>JAVASCRIPT</p><div class="progress">
+                <div class="progress-bar reveal" role="progressbar" aria-valuenow="90"
+                aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                90%
+                </div></div>
+        </div>
+        <div class="col bg-6">
+            <p>PHP</p><div class="progress">
+                <div class="progress-bar reveal" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                70%
+                </div></div><br>
+            <p>WORDPRESS/CMS</p><div class="progress">
+                <div class="progress-bar reveal" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                70%
+                </div></div><br>
+            <p>PHOTOSHOP</p><div class="progress">
+                <div class="progress-bar reveal" role="progressbar" aria-valuenow="90"
+                aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                90%
+                </div></div>
+        </div>
+    </div>
+</div><br><br>
+</div><br>
+</div>

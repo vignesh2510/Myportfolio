@@ -1,0 +1,36 @@
+.myvideo {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+}
+.xn{
+    position: fixed;
+    color: antiquewhite;
+}
+.on{
+    margin-left: 40px; 
+}
+.z{
+    font-family: "Tac One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 100px; */
+}
+.on h1{ 
+    margin-top: 240px;
+    color: #18d26e;
+    position: relative;
+    /* font-size: 50px; */
+}
+.on p{
+    font-family: "Tac One", sans-serif;
+    color: #edf7f1;
+    position: relative;
+    /* font-size: 40px; */
+}
+.h{
+    position: relative;
+    
+}

@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-sm" style="background-color: rgba(0, 0, 0, 0.9);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item aa">
+            <a class="nav-link" routerLink='/home' style="color: #18d26e;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/about' style="color: #18d26e;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/resume" style="color: #18d26e;">Resume</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" style="color: #18d26e;">Contact</a>
+          </li>  
+        </ul>
+      </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+<!---------------------------------------------- section1 --------------------------------------------------->
+<div [ngClass]="two" class="col-md-12"><br>
+  <div class="container col-md-11">
+    <h5 [ngStyle]="x">{{a}}</h5><hr>
+       <h1>{{aone}}</h1><br>
+       <mat-grid-list cols="2" rowHeight="120px">
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="o">
+              <h4><mat-icon>home</mat-icon>
+              {{one}}</h4>
+              <p>{{onep}}</p>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62671.60558221128!2d78.02675752102448!3d10.96523315023983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2f072495398f%3A0x947cfc7a1f7d9f1b!2sKarur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1704440695638!5m2!1sen!2sin" width="550px" height="450px" style="border:0;"></iframe>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="o">
+            <h4><mat-icon>share</mat-icon>
+              {{otp}}</h4>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="o">
+            <h4><mat-icon>mail</mat-icon>
+              {{othh}}</h4>
+            <p>{{othp}}</p>
+           </div><br>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="o">
+            <h4><mat-icon>call</mat-icon>
+              {{ofo}}</h4> 
+            <p>{{ofp}}</p>
+          </div>
+        </mat-grid-tile>
+       </mat-grid-list><br>
+<!------------------------------------------ form ---------------------------------------------------------->
+<div class="oo">
+  <mat-grid-list cols="2" rowHeight="80px">
+    <mat-grid-tile colspan="1" rowspan="1">
+      <div class="form">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">
+      <div class="form">
+      <mat-form-field style="width: 450px;">
+        <mat-label>Mail</mat-label>
+        <input matInput>
+      </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="3">
+      <div class="formo">
+      <mat-form-field>
+        <mat-label>Textarea</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div><br>
+  </div><br>
+  <div class="container ft">
+    <p>Designed By <b><span class="fto">Vigneshwaran</span></b></p>
+ </div>
+</div>
